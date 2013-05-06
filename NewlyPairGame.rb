@@ -1,10 +1,10 @@
-questions = ["Who is the President?", "Is he a Democrat or a Republican?", "What city does he live in?"]
-answers = ["Barack Obama", "Democrat", "Washington D.C."]
+questions = ["Who is the President?", "Is he a Democrat or a Republican?", "What city does he live in?", "Is this his first or second term?"]
+answers = ["barack obama", "democrat", "washington d.c.", "second"]
 x = 0
 points = 0
 while x < 3
 puts questions[x]
-answerinput = gets.chomp
+answerinput = gets.chomp.downcase
   if answerinput == answers[x]
   puts "You scored a point. Points are pretty cool."
   points = points+1
